@@ -24,9 +24,9 @@
             }
         });
         // Nav Toggle Button
-        $('#nav-toggle').click(function(){
-            $header.toggleClass('open');
-        });
+		$('#nav-toggle,#global-nav ul li a').click(function(){
+		    $header.toggleClass('open');
+		});
     });
 
 	$(function() {
