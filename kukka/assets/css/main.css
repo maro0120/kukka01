@@ -83,8 +83,9 @@ img {
 }
 #top-head .logo {
     float: left;
+    color: #fff;
     position: relative;
-    font-size: 36px;
+    font-size: 24px;
     height: 50px;
 }
  
@@ -159,7 +160,7 @@ nav span{
  
 #top-head.fixed .logo {
   position: relative;
-    font-size: 24px;
+    font-size: 20px;
     color: #333;
 }
  
@@ -363,7 +364,7 @@ nav span{
       position: absolute;
       /* 開いてないときは画面外に配置 */
       top: -500px;
-      background: #000;
+      background: #fff;
       width: 100%;
       text-align: center;
       padding: 10px 0;
@@ -388,7 +389,7 @@ nav span{
   #top-head.fixed #global-nav ul li a {
       width: 100%;
       display: block;
-      color: #fff;
+      color: #000;
       padding: 18px 0;
   }
   #nav-toggle {
