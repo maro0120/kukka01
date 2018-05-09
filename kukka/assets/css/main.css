@@ -1732,7 +1732,7 @@ nav span{
 		background-color: #ffffff;
 		background-attachment: fixed,						fixed;
 		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
-		background-position: top left,					center center;
+		background-position: top left,					top right;
 		background-repeat: repeat,						no-repeat;
 		background-size: auto,						auto 100%;
 	}
