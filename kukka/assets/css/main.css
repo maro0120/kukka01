@@ -143,7 +143,7 @@ nav span{
 }
  
  
-/*--------�Œ艻���ꂽ�Ƃ���CSS-----------*/
+/*--------固定化されたときのCSS-----------*/
  
 #top-head.fixed {
     margin-top: 0;
@@ -177,7 +177,7 @@ nav span{
  
  
  
-/*-----------�X�}�z�̃g�O���{�^����CSS-------------*/
+/*-----------スマホのトグルボタンのCSS-------------*/
  
 #nav-toggle {
     display: none;
@@ -215,7 +215,7 @@ nav span{
  
  
 /*---------gnav sp--------------*/
-/*-----------�X�}�z-------------*/
+/*-----------スマホ-------------*/
 @media screen and (max-width: 767px) {
     .head-inner {
       display: none;
@@ -258,7 +258,7 @@ nav span{
     }
     #global-nav {
         position: absolute;
-        /* �J���ĂȂ��Ƃ��͉�ʊO�ɔz�u */
+        /* 開いてないときは画面外に配置 */
         top: -500px;
         background: #000;
         width: 100%;
@@ -291,7 +291,7 @@ nav span{
     #nav-toggle {
         display: block;
     }
-    /* #nav-toggle �؂�ւ��A�j���[�V���� */
+    /* #nav-toggle 切り替えアニメーション */
     .open #nav-toggle span:nth-child(1) {
         top: 11px;
         -webkit-transform: rotate(315deg);
@@ -308,7 +308,7 @@ nav span{
         -moz-transform: rotate(-315deg);
         transform: rotate(-315deg);
     }
-    /* #global-nav �X���C�h�A�j���[�V���� */
+    /* #global-nav スライドアニメーション */
     .open #global-nav {
         /* #global-nav top + #mobile-head height */
         -moz-transform: translateY(556px);
@@ -317,7 +317,7 @@ nav span{
     }
 }
  
-/*------------�^�u���b�g�p------------------*/
+/*------------タブレット用------------------*/
  
 @media screen and (max-width: 1024px) {
   .head-inner {
@@ -361,7 +361,7 @@ nav span{
   }
   #global-nav {
       position: absolute;
-      /* �J���ĂȂ��Ƃ��͉�ʊO�ɔz�u */
+      /* 開いてないときは画面外に配置 */
       top: -500px;
       background: #000;
       width: 100%;
@@ -396,7 +396,7 @@ nav span{
       right: 25px;
       top: 20px;
   }
-  /* #nav-toggle �؂�ւ��A�j���[�V���� */
+  /* #nav-toggle 切り替えアニメーション */
   .open #nav-toggle span:nth-child(1) {
       top: 11px;
       -webkit-transform: rotate(315deg);
@@ -413,7 +413,7 @@ nav span{
       -moz-transform: rotate(-315deg);
       transform: rotate(-315deg);
   }
-  /* #global-nav �X���C�h�A�j���[�V���� */
+  /* #global-nav スライドアニメーション */
   .open #global-nav {
       /* #global-nav top + #mobile-head height */
       -moz-transform: translateY(556px);
@@ -1727,14 +1727,13 @@ nav span{
 /* Basic */
 
 	html {
-		background-color: #313a3d;
+
+		background-color: #ffffff;
 		background-attachment: fixed,						fixed;
 		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
 		background-position: top left,					center center;
-		background-repeat: repeat,						none;
-		background-size: auto,						cover;
-
-
+		background-repeat: repeat,						no-repeat;
+		background-size: auto,						auto 100%;
 	}
 
 	html.is-loading body *, html.is-loading body *:before, html.is-loading body *:after {
@@ -1763,7 +1762,7 @@ nav span{
 
 	body, input, select, textarea {
 		color: #6f7577;
-		font-family: "���˃S�V�b�N Pro R", "Kozuka Gothic Pro R", sans-serif;
+		font-family: "小塚ゴシック Pro R", "Kozuka Gothic Pro R", sans-serif;
 		font-size: 15pt;
 		font-weight: 400;
 		line-height: 1.75em;
@@ -1771,7 +1770,7 @@ nav span{
 
 	tbody {
 		color: #6f7577;
-		font-family: "���˃S�V�b�N Pro R", "Kozuka Gothic Pro R", sans-serif;
+		font-family: "小塚ゴシック Pro R", "Kozuka Gothic Pro R", sans-serif;
 		font-size: 8pt;
 		font-weight: 400;
 		line-height: 1.75em;
@@ -1779,7 +1778,7 @@ nav span{
 
 	tp {
 		color: #6f7577;
-		font-family: "���˃S�V�b�N Pro R", "Kozuka Gothic Pro R", sans-serif;
+		font-family: "小塚ゴシック Pro R", "Kozuka Gothic Pro R", sans-serif;
 		font-size: 8pt;
 		font-weight: 400;
 		line-height: 1.75em;
@@ -1814,7 +1813,7 @@ nav span{
 		margin: 0 0 2em 0;
 	}
 	.left {
-   text-align: left;  /* ���͂����񂹂���(��) */
+   text-align: left;  /* 文章を左寄せする(※) */
 	}
 
 	.fonts8{
