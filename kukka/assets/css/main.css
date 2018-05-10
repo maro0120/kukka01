@@ -19,6 +19,16 @@
   display: block;
 }
 
+.site-header{
+    transition: .5s;
+}
+ 
+.site-header.hide{
+    transform: translateY(-100%);
+}
+ 
+
+
 table.table01 {
 	width:100%;
 	border-right:#9ed8b6 solid 1px;
