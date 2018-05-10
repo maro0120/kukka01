@@ -270,7 +270,7 @@ nav span{
     #global-nav {
         position: absolute;
         /* 開いてないときは画面外に配置 */
-        top: -500px;
+        /* top: -500px; */
         background: #000;
         width: 100%;
         text-align: center;
