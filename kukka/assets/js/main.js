@@ -34,6 +34,9 @@
 		})
     });
 
+
+
+
 	$(function() {
 		var startPos = 0,winScrollTop = 0;
 		$(window).on('scroll',function(){
@@ -47,10 +50,6 @@
 		    }
 		    startPos = winScrollTop;
 		});
-	});
-
-
-	$(function() {
 
 		var	$window = $(window),
 			$body = $('body'),
